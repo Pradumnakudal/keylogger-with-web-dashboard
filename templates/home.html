@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Home</title>
     <style>
-        h1{
-            font-size: 40px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: normal;
-            color: rgb(58, 56, 56);
-            text-align: center;
-        }
         #banner{
-            width: 100%;
-            height: 550px;
+            height: 360px;
             object-fit: cover;
+            width: 100%;
+            margin-top: 15px;
         }
-        h2{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 32px;
-            color: rgb(100, 100, 100);
-            text-align: center;
-            font-weight: normal;
-        }
-
-        p {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        
-        #container{
-        max-width: 720px;  
-        margin:0 auto ;  
-        }
-
     </style>
 </head>
     <body>
-        <div id="container">
-        <h1>Your Team's Activity at a Glance</h1>
-            <img id="banner" src="../static/banner.jpg" alt="Employee Monitoring Illustration">
-        <h2>About This Tool</h2>
+     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+        <div class="container">
+        <h1 class="text-center mt-2 mb-4">Your Team's Activity at a Glance</h1>
         
-        <p>This employee monitoring system is designed to help administrators gain insight into workstation activity in a secure and efficient way. It features a lightweight agent that runs silently in the background and continuously collects key usage data.</p>
-        <p>The dashboard provides real-time access to important information such as keystrokes, clipboard content, screenshots, system specifications, and even recorded audio samples — all organized and viewable in a clean, user-friendly interface.</p>
-        <p> Built with privacy and control in mind, this tool is ideal for academic projects, internal team supervision, or productivity analysis in controlled environments.</p>
-            <div style="text-align: center;">
-            <button>Contact Us</button>
+<div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Services
+    </button>
+    <ul class="dropdown-menu">
+     
+      <li><a class="dropdown-item" href="#">Keystrokes</a></li>
+      <li><a class="dropdown-item" href="#">Clipboard content</a></li>
+      <li><a class="dropdown-item" href="#">Screenshots</a></li>
+      <li><a class="dropdown-item" href="#">Recorded Audio</a></li>
+    </ul>
+  </div>
+        <img class="img-fluid" id="banner" src="../static/banner.jpg" alt="Employee Monitoring Illustration">
+        <h2 class="text-center mt-2 mb-4">About This Tool</h2>
+        
+        <p class="lead">This employee monitoring system is designed to help administrators gain insight into workstation activity in a secure and efficient way. It features a lightweight agent that runs silently in the background and continuously collects key usage data.</p>
+        <p class="lead">The dashboard provides real-time access to important information such as keystrokes, clipboard content, screenshots, system specifications, and even recorded audio samples — all organized and viewable in a clean, user-friendly interface.</p>
+        <p class="lead"> Built with privacy and control in mind, this tool is ideal for academic projects, internal team supervision, or productivity analysis in controlled environments.</p>
+            <div class="text-center">
+            <button type="button" class="btn btn-outline-dark">Contact Us</button>
             </div>
         </div>
         
