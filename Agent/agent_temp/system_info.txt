@@ -1,0 +1,8 @@
+Timestamp: 2025-05-19 11:32:04
+Username: pradumna
+Hostname: SHADY
+IP Address: 192.168.43.148
+OS: Windows
+OS Version: 10.0.22631
+Machine: AMD64
+Processor: Intel64 Family 6 Model 142 Stepping 12, GenuineIntel

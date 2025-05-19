@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Screenshots</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Uploaded Screenshots</h2>
+    {% for image in screenshots %}
+      <div class="mb-3">
+        <img src="{{ url_for('static', filename='uploads/' + image) }}" class="img-fluid border" />
+      </div>
+    {% else %}
+      <p>No screenshots uploaded yet.</p>
+    {% endfor %}
+    <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+  </div>
+</body>
+</html>

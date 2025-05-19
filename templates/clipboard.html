@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clipboard Logs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Clipboard Logs</h2>
+    {% for ts, content in clips %}
+      <div class="mb-4 p-3 bg-light border rounded" style="white-space: pre-wrap;">
+        <strong>[{{ ts }}]</strong><br />
+        {{ content }}
+      </div>
+    {% else %}
+      <p>No clipboard data available.</p>
+    {% endfor %}
+    <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+  </div>
+</body>
+</html>
